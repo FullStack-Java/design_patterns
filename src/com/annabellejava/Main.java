@@ -18,6 +18,7 @@ public class Main {
     }
 
     public static void runApp(){
+//        https://www.udemy.com/course/java-design-patterns-tutorial/learn/lecture/230613#overview
         Model model = new Model();
         View view = new View(model);
 

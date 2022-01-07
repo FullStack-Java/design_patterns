@@ -1,11 +1,11 @@
 package com.annabellejavamvc.model;
 
-public class CalcFees {
+public class CalcFeesModel {
     private String name;
     private boolean home;
     private int courses;
 
-    public CalcFees(String name, boolean home, int courses) {
+    public CalcFeesModel(String name, boolean home, int courses) {
         this.name = setName(name);
         this.home = home;
         this.courses = setCourses(courses);

@@ -1,7 +1,9 @@
 package com.annabellejavamvc;
 
-import com.annabellejava.model.Model;
-import com.annabellejava.view.View;
+
+
+import com.annabellejavamvc.controller.CalcFeeController;
+import com.annabellejavamvc.view.CalcFeeView;
 
 import javax.swing.*;
 
@@ -12,14 +14,15 @@ public class App {
 
             @Override
             public void run() {
-
+                runApplication();
             }
         });
     }
 
     public static void runApplication(){
-        Model model = new Model();
-        View view = new View(model);
+//        https://www.youtube.com/watch?v=Iwwznm9XSME
+        CalcFeeView theView = new CalcFeeView();
+        CalcFeeController calcFeeController = new CalcFeeController(theView);
 
 
     }
