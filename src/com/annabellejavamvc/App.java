@@ -3,6 +3,7 @@ package com.annabellejavamvc;
 
 
 import com.annabellejavamvc.controller.CalcFeeController;
+import com.annabellejavamvc.model.CalcFeesModel;
 import com.annabellejavamvc.view.CalcFeeView;
 
 import javax.swing.*;
@@ -22,9 +23,8 @@ public class App {
     public static void runApplication(){
 //        https://www.youtube.com/watch?v=Iwwznm9XSME
         CalcFeeView theView = new CalcFeeView();
-        CalcFeeController calcFeeController = new CalcFeeController(theView);
-
-
+        CalcFeesModel theModel = new CalcFeesModel();
+        CalcFeeController calcFeeController = new CalcFeeController(theView,theModel);
     }
 
 }
