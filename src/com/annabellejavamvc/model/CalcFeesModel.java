@@ -6,15 +6,13 @@ public class CalcFeesModel {
     private int courses = 0;
 
     public CalcFeesModel() {
-        this.name = setName(name);
-        this.home = home;
-        this.courses = setCourses(courses);
+
     }
 
     public String setName(String name) {
-        name = name.toLowerCase();
-        name = name.substring(0,1).toUpperCase() + name.substring(1);
-        return name;
+        System.out.println(name);
+        this.name = name.substring(0,1).toUpperCase() + name.substring(1);
+        return this.name;
     }
 
     public void setHome(boolean home) {

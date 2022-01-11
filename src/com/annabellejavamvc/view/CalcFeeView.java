@@ -26,7 +26,7 @@ public class CalcFeeView extends JFrame {
         lblFamilyName = new JLabel("Enter your family name");
         txtFamilyName = new JTextField(10);
         homeStudent = new JRadioButton("Home Student", false);
-        overSeasStudent = new JRadioButton("OverSeas Student", true);
+        overSeasStudent = new JRadioButton("OverSeas Student", false);
         bpStatus = new ButtonGroup();
         lblNoCourses = new JLabel("Enter the number of courses.");
         txtNoOfCourses = new JTextField(10);
